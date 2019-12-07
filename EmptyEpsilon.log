@@ -1,0 +1,140 @@
+[INFO]  Loaded: packs/Angryfly.pack with 166 files
+[INFO]  Loaded: packs/Asteroids.pack with 30 files
+[INFO]  Loaded: packs/msgamedev.pack with 96 files
+[INFO]  Loaded: Tokka_WalkingMan.png with 6 sprites
+[INFO]  Loaded shader: glitch
+[INFO]  Loaded shader: warp
+[INFO]  OpenGL version: 4.6
+[INFO]  Load script: model_data.lua
+[INFO]  Load script: shipTemplates.lua
+[ERROR] Duplicate ship template definition: Luna
+[INFO]  Load script: factionInfo.lua
+[INFO]  Load script: science_db.lua
+[INFO]  Model data: AdlerLongRangeScoutGreen is not used by any ship template
+[INFO]  Model data: AdlerLongRangeScoutGrey is not used by any ship template
+[INFO]  Model data: AdlerLongRangeScoutWhite is not used by any ship template
+[INFO]  Model data: AtlasHeavyFighterBlue is not used by any ship template
+[INFO]  Model data: AtlasHeavyFighterGreen is not used by any ship template
+[INFO]  Model data: AtlasHeavyFighterGrey is not used by any ship template
+[INFO]  Model data: AtlasHeavyFighterWhite is not used by any ship template
+[INFO]  Model data: HeavyCorvetteBlue is not used by any ship template
+[INFO]  Model data: HeavyCorvetteGrey is not used by any ship template
+[INFO]  Model data: HeavyCorvetteWhite is not used by any ship template
+[INFO]  Model data: LaserCorvetteBlue is not used by any ship template
+[INFO]  Model data: LaserCorvetteGreen is not used by any ship template
+[INFO]  Model data: LaserCorvetteGrey is not used by any ship template
+[INFO]  Model data: LaserCorvetteRed is not used by any ship template
+[INFO]  Model data: LaserCorvetteWhite is not used by any ship template
+[INFO]  Model data: LaserCorvetteYellow is not used by any ship template
+[INFO]  Model data: LightCorvetteBlue is not used by any ship template
+[INFO]  Model data: LightCorvetteGreen is not used by any ship template
+[INFO]  Model data: LightCorvetteWhite is not used by any ship template
+[INFO]  Model data: LightCorvetteYellow is not used by any ship template
+[INFO]  Model data: LindwurmFighterGreen is not used by any ship template
+[INFO]  Model data: LindwurmFighterGrey is not used by any ship template
+[INFO]  Model data: LindwurmFighterRed is not used by any ship template
+[INFO]  Model data: LindwurmFighterWhite is not used by any ship template
+[INFO]  Model data: MineLayerCorvetteBlue is not used by any ship template
+[INFO]  Model data: MineLayerCorvetteGreen is not used by any ship template
+[INFO]  Model data: MineLayerCorvetteGrey is not used by any ship template
+[INFO]  Model data: MineLayerCorvetteRed is not used by any ship template
+[INFO]  Model data: MineLayerCorvetteWhite is not used by any ship template
+[INFO]  Model data: MineLayerCorvetteYellow is not used by any ship template
+[INFO]  Model data: MissileCorvetteBlue is not used by any ship template
+[INFO]  Model data: MissileCorvetteGrey is not used by any ship template
+[INFO]  Model data: MissileCorvetteRed is not used by any ship template
+[INFO]  Model data: MissileCorvetteWhite is not used by any ship template
+[INFO]  Model data: MissileCorvetteYellow is not used by any ship template
+[INFO]  Model data: MultiGunCorvetteBlue is not used by any ship template
+[INFO]  Model data: MultiGunCorvetteGreen is not used by any ship template
+[INFO]  Model data: MultiGunCorvetteGrey is not used by any ship template
+[INFO]  Model data: MultiGunCorvetteRed is not used by any ship template
+[INFO]  Model data: MultiGunCorvetteWhite is not used by any ship template
+[INFO]  Model data: MultiGunCorvetteYellow is not used by any ship template
+[INFO]  Model data: SensorBuoyMKI is not used by any ship template
+[INFO]  Model data: SensorBuoyMKII is not used by any ship template
+[INFO]  Model data: SensorBuoyMKIII is not used by any ship template
+[INFO]  Model data: WespeScoutBlue is not used by any ship template
+[INFO]  Model data: WespeScoutGreen is not used by any ship template
+[INFO]  Model data: WespeScoutGrey is not used by any ship template
+[INFO]  Model data: WespeScoutWhite is not used by any ship template
+[INFO]  Model data: ammo_box is not used by any ship template
+[INFO]  Model data: artifact1 is not used by any ship template
+[INFO]  Model data: artifact2 is not used by any ship template
+[INFO]  Model data: artifact3 is not used by any ship template
+[INFO]  Model data: artifact4 is not used by any ship template
+[INFO]  Model data: artifact5 is not used by any ship template
+[INFO]  Model data: artifact6 is not used by any ship template
+[INFO]  Model data: artifact7 is not used by any ship template
+[INFO]  Model data: artifact8 is not used by any ship template
+[INFO]  Model data: battleship_destroyer_2_upgraded is not used by any ship template
+[INFO]  Model data: shield_generator is not used by any ship template
+[INFO]  Model data: small_frigate_1 is not used by any ship template
+[INFO]  Model data: small_frigate_2 is not used by any ship template
+[INFO]  Model data: space_frigate_6 is not used by any ship template
+[INFO]  hardware.ini not found. Not controlling external hardware.
+[INFO]  Loaded: gui/BackgroundCrosses with 0 sprites
+[INFO]  Loaded: logo_full with 0 sprites
+[INFO]  Loaded: gui/ButtonBackground with 0 sprites
+[INFO]  Loaded: mouse.png with 0 sprites
+[INFO]  Loaded: gui/ButtonBackground.hover with 0 sprites
+[INFO]  Loaded: button.wav of 0.15 seconds
+[INFO]  Loaded: gui/LabelBackground with 0 sprites
+[INFO]  Loaded: gui/TextEntryBackground with 0 sprites
+[INFO]  Loaded: gui/SelectorBackground with 0 sprites
+[INFO]  Loaded: gui/SelectorArrow with 0 sprites
+[INFO]  Loaded: gui/ButtonBackground.active with 0 sprites
+[INFO]  Loaded: gui/ScrollbarBackground with 0 sprites
+[INFO]  Loaded: gui/ScrollbarSelection with 0 sprites
+[INFO]  Loaded: gui/PanelBackground with 0 sprites
+[INFO]  Load script: scenario_63_theWake.lua
+[INFO]  Load script: util_random_transports.lua
+[WARN]  Failed to open game state log file: logs/game_log_07-12-2019_15.45.41.txt
+[INFO]  Loaded: gui/icons/station-helm with 0 sprites
+[INFO]  Loaded: gui/icons/station-weapons with 0 sprites
+[INFO]  Loaded: gui/icons/station-engineering with 0 sprites
+[INFO]  Loaded: gui/icons/station-science with 0 sprites
+[INFO]  Loaded: gui/icons/station-relay with 0 sprites
+[INFO]  Loaded: gui/ButtonBackground.disabled with 0 sprites
+[INFO]  Loaded: gui/BackgroundGradientOffset with 0 sprites
+[INFO]  Loaded: RadarBlip.png with 0 sprites
+[INFO]  Loaded: radartrace_mediumstation.png with 0 sprites
+[INFO]  Loaded: radartrace_largestation.png with 0 sprites
+[INFO]  Loaded: Nebula1.png with 0 sprites
+[INFO]  Loaded: Nebula2.png with 0 sprites
+[INFO]  Loaded: Nebula3.png with 0 sprites
+[INFO]  Loaded: radar_dread.png with 0 sprites
+[INFO]  Loaded: redicule.png with 0 sprites
+[INFO]  Loaded: gui/KeyValueBackground with 0 sprites
+[INFO]  Loaded: gui/SliderBackground with 0 sprites
+[INFO]  Loaded: gui/SliderKnob with 0 sprites
+[INFO]  Loaded: RadarArrow.png with 0 sprites
+[INFO]  Loading shader: billboardShader
+[INFO]  Loaded: StarsBack with 0 sprites
+[INFO]  Loaded: StarsLeft with 0 sprites
+[INFO]  Loaded: StarsFront with 0 sprites
+[INFO]  Loaded: StarsRight with 0 sprites
+[INFO]  Loaded: StarsTop with 0 sprites
+[INFO]  Loaded: StarsBottom with 0 sprites
+[INFO]  Loaded: Nebula1 with 0 sprites
+[INFO]  Loaded: Nebula3 with 0 sprites
+[INFO]  Loaded: Nebula2 with 0 sprites
+[INFO]  Loading shader: objectShaderBS
+[INFO]  Loaded: Astroid_5_d.png with 0 sprites
+[INFO]  Loaded: Astroid_5_s.png with 0 sprites
+[INFO]  Loaded: Astroid_8_d.png with 0 sprites
+[INFO]  Loaded: Astroid_8_s.png with 0 sprites
+[INFO]  Loaded: Astroid_10_d.png with 0 sprites
+[INFO]  Loaded: Astroid_10_s.png with 0 sprites
+[INFO]  Loaded: Astroid_7_d.png with 0 sprites
+[INFO]  Loaded: Astroid_7_s.png with 0 sprites
+[INFO]  Loaded: Astroid_2_d.png with 0 sprites
+[INFO]  Loaded: Astroid_2_s.png with 0 sprites
+[INFO]  Loaded: Astroid_1_d.png with 0 sprites
+[INFO]  Loaded: Astroid_1_s.png with 0 sprites
+[INFO]  Loaded: Astroid_3_d.png with 0 sprites
+[INFO]  Loaded: Astroid_3_s.png with 0 sprites
+[INFO]  Loaded: Astroid_4_d.png with 0 sprites
+[INFO]  Loaded: Astroid_4_s.png with 0 sprites
+[INFO]  Loaded: space_station_4/space_station_4_color.jpg with 0 sprites
+[INFO]  Loaded: space_station_4/space_station_4_specula

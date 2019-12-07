@@ -1,0 +1,248 @@
+-------------------
+
+Error occurred on Saturday, December 7, 2019 at 15:08:47.
+
+EmptyEpsilon.exe caused an Access Violation at location 0042E26B in module EmptyEpsilon.exe Reading from location 970344DC.
+
+Registers:
+eax=970344d0 ebx=078cf6a4 ecx=00000000 edx=078cf6a4 esi=0000015d edi=0146fae0
+eip=0042e26b esp=0146edf0 ebp=0146eee8 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010206
+
+AddrPC   Params
+0042E26B 00000000 0079B83C 0079AFB8  EmptyEpsilon.exe!RepairCrew::update
+0060D9BD 0146FBE0 0146F0F4 00000103  EmptyEpsilon.exe!Engine::runMainLoop
+004040CB 0002CA50 00000058 00000001  EmptyEpsilon.exe!main
+004013E3 0033F000 761E6340 0146FFDC  EmptyEpsilon.exe!__tmainCRTStartup  [./mingw-w64-crt/crt/crtexe.c @ 334]
+761E6359 0033F000 F6A93FEB 00000000  KERNEL32.DLL!@BaseThreadInitThunk@12
+778F7B74 FFFFFFFF 77918EF6 00000000  ntdll.dll!__RtlUserThreadStart
+778F7B44 004014E0 0033F000 00000000  ntdll.dll!__RtlUserThreadStart@8
+
+EmptyEpsilon.exe
+ntdll.dll   	6.2.18362.387
+KERNEL32.DLL	6.2.18362.329
+KERNELBASE.dll	6.2.18362.476
+ADVAPI32.dll	6.2.18362.329
+msvcrt.dll  	7.0.18362.1
+sechost.dll 	6.2.18362.267
+sfml-graphics-2.dll
+sfml-audio-2.dll
+sfml-network-2.dll
+RPCRT4.dll  	6.2.18362.476
+WS2_32.dll  	6.2.18362.387
+SspiCli.dll 	6.2.18362.1
+sfml-system-2.dll
+sfml-window-2.dll
+CRYPTBASE.dll	6.2.18362.1
+GDI32.dll   	6.2.18362.1
+exchndl.dll 	0.8.2.0
+bcryptPrimitives.dll	6.2.18362.295
+PSAPI.DLL   	6.2.18362.1
+win32u.dll  	6.2.18362.476
+OPENGL32.DLL	6.2.18362.387
+USER32.dll  	6.2.18362.476
+gdi32full.dll	6.2.18362.476
+SHELL32.dll 	6.2.18362.449
+combase.dll 	6.2.18362.449
+msvcp_win.dll	6.2.18362.387
+ucrtbase.dll	6.2.18362.387
+libgcc_s_sjlj-1.dll
+cfgmgr32.dll	6.2.18362.387
+libstdc++-6.dll
+shcore.dll  	6.2.18362.1
+OpenAL32.dll
+windows.storage.dll	6.2.18362.449
+ole32.dll   	6.2.18362.113
+WINMM.DLL   	6.2.18362.1
+profapi.dll 	6.2.18362.1
+mgwhelp.dll 	0.8.2.0
+powrprof.dll	6.2.18362.1
+UMPDC.dll
+IPHLPAPI.DLL	6.2.18362.1
+shlwapi.dll 	6.2.18362.1
+GLU32.dll   	6.2.18362.387
+kernel.appcore.dll	6.2.18362.1
+WSOCK32.DLL 	6.2.18362.1
+cryptsp.dll 	6.2.18362.1
+winmmbase.dll	6.2.18362.1
+dbghelp.dll 	6.3.9600.17336
+VERSION.dll 	6.2.18362.1
+dxcore.dll  	6.2.18362.1
+IMM32.DLL   	6.2.18362.387
+clbcatq.dll 	2001.12.10941.16384
+MMDevApi.dll	6.2.18362.387
+DEVOBJ.dll  	6.2.18362.387
+AUDIOSES.DLL	6.2.18362.449
+OLEAUT32.dll	6.2.18362.329
+wintypes.dll	6.2.18362.449
+resourcepolicyclient.dll	6.2.18362.1
+uxtheme.dll 	6.2.18362.449
+MSCTF.dll   	6.2.18362.387
+nost_FSH.dll	3.1.0.818
+nvoglv32.dll	26.21.14.4141
+SETUPAPI.dll	6.2.18362.1
+bcrypt.dll  	6.2.18362.267
+WTSAPI32.dll	6.2.18362.1
+WINTRUST.dll	6.2.18362.387
+MSASN1.dll  	6.2.18362.1
+CRYPT32.dll 	6.2.18362.476
+ntmarta.dll 	6.2.18362.1
+dwmapi.dll  	6.2.18362.267
+nvspcap.dll 	3.20.1.57
+WINSTA.dll  	6.2.18362.53
+dinput8.dll 	6.2.18362.1
+inputhost.dll	6.2.18362.387
+CoreMessaging.dll	6.2.18362.1
+CoreUIComponents.dll	6.2.18362.207
+PROPSYS.dll 	7.0.18362.267
+HID.DLL     	6.2.18362.1
+TextInputFramework.dll	6.2.18362.207
+iertutil.dll	11.0.18362.449
+SpTip.dll   	6.2.18362.1
+OWExplorer.dll	2.2.74.2
+mswsock.dll 	6.2.18362.1
+NSI.dll     	6.2.18362.449
+dhcpcsvc6.DLL	6.2.18362.267
+dhcpcsvc.DLL	6.2.18362.267
+DNSAPI.dll  	6.2.18362.267
+WININET.dll 	11.0.18362.418
+ondemandconnroutehelper.dll	6.2.18362.1
+winhttp.dll 	6.2.18362.449
+WINNSI.DLL  	6.2.18362.449
+urlmon.dll  	11.0.18362.449
+rasadhlp.dll	6.2.18362.1
+fwpuclnt.dll	6.2.18362.113
+schannel.dll	6.2.18362.418
+mskeyprotect.dll	6.2.18362.1
+ncrypt.dll  	6.2.18362.1
+NTASN1.dll  	6.2.18362.1
+DPAPI.DLL   	6.2.18362.1
+rsaenh.dll  	6.2.18362.1
+cryptnet.dll	6.2.18362.1
+ncryptsslp.dll	6.2.18362.1
+
+Windows 6.2.9200
+DrMingw 0.8.2
+
+-------------------
+
+Error occurred on Saturday, December 7, 2019 at 15:51:08.
+
+EmptyEpsilon.exe caused an Access Violation at location 04A1F38C Reading from location 001C400C.
+
+Registers:
+eax=08df4c60 ebx=0e170000 ecx=00000a00 edx=00000118 esi=001c400c edi=00014000
+eip=04a1f38c esp=04c3ed14 ebp=44502000 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010206
+
+AddrPC   Params
+04A1F38C 0E170000 08DE5C60 00000000
+7A6A72BA 00170000 00000000 00000000  nvoglv32.dll!DrvPresentBuffers
+7A6A406C 0E170000 00000000 00000000  nvoglv32.dll!DrvPresentBuffers
+79D2CF65 00000001 00000001 00000B18  nvoglv32.dll!0x16cf65
+7A3B2353 00001A04 05045040 7B791FC4  nvoglv32.dll!0x7f2353
+7A3B384B 05045040 7A523150 7A523150  nvoglv32.dll!0x7f384b
+7A3B356C 054DB2C0 01735300 04C3FF80  nvoglv32.dll!0x7f356c
+7A523172 054DB2C0 761E6340 04C3FFDC  nvoglv32.dll!DrvValidateVersion
+761E6359 054DB2C0 72D208E2 00000000  KERNEL32.DLL!@BaseThreadInitThunk@12
+778F7B74 FFFFFFFF 77918F1C 00000000  ntdll.dll!__RtlUserThreadStart
+778F7B44 7A523150 054DB2C0 00000000  ntdll.dll!__RtlUserThreadStart@8
+
+EmptyEpsilon.exe
+ntdll.dll   	6.2.18362.387
+KERNEL32.DLL	6.2.18362.329
+KERNELBASE.dll	6.2.18362.476
+ADVAPI32.dll	6.2.18362.329
+msvcrt.dll  	7.0.18362.1
+sfml-audio-2.dll
+sfml-graphics-2.dll
+sechost.dll 	6.2.18362.267
+sfml-network-2.dll
+WS2_32.dll  	6.2.18362.387
+RPCRT4.dll  	6.2.18362.476
+sfml-window-2.dll
+sfml-system-2.dll
+SspiCli.dll 	6.2.18362.1
+GDI32.dll   	6.2.18362.1
+CRYPTBASE.dll	6.2.18362.1
+exchndl.dll 	0.8.2.0
+win32u.dll  	6.2.18362.476
+bcryptPrimitives.dll	6.2.18362.295
+PSAPI.DLL   	6.2.18362.1
+libgcc_s_sjlj-1.dll
+SHELL32.dll 	6.2.18362.449
+gdi32full.dll	6.2.18362.476
+USER32.dll  	6.2.18362.476
+ucrtbase.dll	6.2.18362.387
+libstdc++-6.dll
+msvcp_win.dll	6.2.18362.387
+cfgmgr32.dll	6.2.18362.387
+OpenAL32.dll
+shcore.dll  	6.2.18362.1
+OPENGL32.DLL	6.2.18362.387
+ole32.dll   	6.2.18362.113
+combase.dll 	6.2.18362.449
+windows.storage.dll	6.2.18362.449
+profapi.dll 	6.2.18362.1
+WINMM.DLL   	6.2.18362.1
+mgwhelp.dll 	0.8.2.0
+powrprof.dll	6.2.18362.1
+UMPDC.dll
+shlwapi.dll 	6.2.18362.1
+IPHLPAPI.DLL	6.2.18362.1
+kernel.appcore.dll	6.2.18362.1
+cryptsp.dll 	6.2.18362.1
+WSOCK32.DLL 	6.2.18362.1
+GLU32.dll   	6.2.18362.387
+dbghelp.dll 	6.3.9600.17336
+WINMMBASE.dll	6.2.18362.1
+VERSION.dll 	6.2.18362.1
+dxcore.dll  	6.2.18362.1
+IMM32.DLL   	6.2.18362.387
+clbcatq.dll 	2001.12.10941.16384
+MMDevApi.dll	6.2.18362.387
+DEVOBJ.dll  	6.2.18362.387
+AUDIOSES.DLL	6.2.18362.449
+OLEAUT32.dll	6.2.18362.329
+wintypes.dll	6.2.18362.449
+resourcepolicyclient.dll	6.2.18362.1
+uxtheme.dll 	6.2.18362.449
+MSCTF.dll   	6.2.18362.387
+nost_FSH.dll	3.1.0.818
+nvoglv32.dll	26.21.14.4141
+SETUPAPI.dll	6.2.18362.1
+bcrypt.dll  	6.2.18362.267
+WTSAPI32.dll	6.2.18362.1
+WINTRUST.dll	6.2.18362.387
+MSASN1.dll  	6.2.18362.1
+CRYPT32.dll 	6.2.18362.476
+ntmarta.dll 	6.2.18362.1
+dwmapi.dll  	6.2.18362.267
+nvspcap.dll 	3.20.1.57
+WINSTA.dll  	6.2.18362.53
+dinput8.dll 	6.2.18362.1
+inputhost.dll	6.2.18362.387
+CoreMessaging.dll	6.2.18362.1
+PROPSYS.dll 	7.0.18362.267
+CoreUIComponents.dll	6.2.18362.207
+HID.DLL     	6.2.18362.1
+TextInputFramework.dll	6.2.18362.207
+iertutil.dll	11.0.18362.449
+SpTip.dll   	6.2.18362.1
+OWExplorer.dll	2.2.74.2
+mswsock.dll 	6.2.18362.1
+NSI.dll     	6.2.18362.449
+dhcpcsvc6.DLL	6.2.18362.267
+dhcpcsvc.DLL	6.2.18362.267
+DNSAPI.dll  	6.2.18362.267
+WININET.dll 	11.0.18362.418
+ondemandconnroutehelper.dll	6.2.18362.1
+winhttp.dll 	6.2.18362.449
+WINNSI.DLL  	6.2.18362.449
+urlmon.dll  	11.0.18362.449
+rasadhlp.dll	6.2.18362.1
+fwpuclnt.dll	6.2.18362.113
+
+Windows 6.2.9200
+DrMingw 0.8.2
+
