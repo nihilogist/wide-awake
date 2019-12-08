@@ -9,6 +9,8 @@ require("utils.lua")
 function init()
 	-- Spawn a player Lunar Cruiser.
 	ghostOne = PlayerSpaceship():setFaction("Human Navy"):setTemplate("Lunar"):setCallSign("GhostOne")
+	-- Set the engines to minimal efficiency to start within
+	ghostOne:setImpulseMaxSpeed(5)
 
 	enemyList = {}
 	friendlyList = {}
@@ -31,9 +33,6 @@ function init()
 	station_3 = SpaceStation():setTemplate('Large Station'):setRotation(random(0, 360)):setFaction("Human Navy")
 	table.insert(friendlyList, setCirclePos(station_3, 0, 0, n * 360 / 3 + random(-30, 30), random(10000, 22000)))
 
-	-- Start the players with 300 reputation.
-	friendlyList[1]:addReputationPoints(300.0)
-
 	-- Randomly scatter nebulae near the players' spawn point.
 	local x, y = friendlyList[1]:getPosition()
 	setCirclePos(Nebula(), x, y, random(0, 360), 6000)
@@ -41,6 +40,14 @@ function init()
 	for n=1, 5 do
 		setCirclePos(Nebula(), 0, 0, random(0, 360), random(20000, 45000))
 	end
+
+	-- Start setting up the nebula maze
+	Nebula():setPosition(0, 8000)
+	Nebula():setPosition(0, -8000)
+	Nebula():setPosition(4000, 8000)
+	Nebula():setPosition(4000, -8000)
+	Nebula():setPosition(-4000, 8000)
+	Nebula():setPosition(-4000, -8000)
 
   -- GM function to launch a Fighter
   function launchFighter(callsign)
@@ -92,6 +99,10 @@ function init()
 			scapulaThree = nil
 	  end
 	end)
+
+	addGMFunction("Repair Main Drives", function()
+		ghostOne:setImpulseMaxSpeed(30)
+  end)
 
 	-- Let the GM declare the Humans (players) victorious.
 	addGMFunction("Win", function()
@@ -150,26 +161,7 @@ function init()
 		end
 	end
 
-	-- Spawn 0-3 random mine fields.
-	for cnt=1,random(0, 3) do
-		a = random(0, 360)
-		a2 = random(0, 360)
-		d = random(20000, 40000)
-		x, y = vectorFromAngle(a, d)
 
-		for nx=-1,1 do
-			for ny=-5,5 do
-				if random(0, 100) < 90 then
-					dx1, dy1 = vectorFromAngle(a2, (nx * 1000) + random(-100, 100))
-					dx2, dy2 = vectorFromAngle(a2 + 90, (ny * 1000) + random(-100, 100))
-					Mine():setPosition(x + dx1 + dx2, y + dy1 + dy2)
-				end
-			end
-		end
-	end
-
-	-- Spawn random neutral transports.
-	Script():run("util_random_transports.lua")
 end
 
 function update(delta)
@@ -199,16 +191,4 @@ function update(delta)
 		victory("Human Navy");
 	end
 
-	-- If all allies are destroyed, the Humans (players) lose.
-	if friendly_count == 0 then
-		victory("Kraylor");
-	else
-		-- As the battle continues, award reputation based on
-		-- the players' progress and number of surviving allies.
-		for _, friendly in ipairs(friendlyList) do
-			if friendly:isValid() then
-				friendly:addReputationPoints(delta * friendly_count * 0.1)
-			end
-		end
-	end
 end

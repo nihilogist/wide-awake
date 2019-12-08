@@ -108,7 +108,18 @@ variation:addDoor(4,4,true)
 variation:addDoor(3,5,true)
 variation:addDoor(4,5,true)
 
-
+-- Template for the pirate Ravagers
+template = ShipTemplate():setName("Ravager"):setClass("Corvette", "Destroyer"):setModel("battleship_destroyer_1_upgraded")
+template:setRadarTrace("radar_dread.png")
+template:setDescription([[This monstrosity was an Imperial Light Cruiser, before the pirates got their hands on it.]])
+template:setHull(100)
+template:setShields(50, 20)
+template:setSpeed(15, 2, 3)
+template:setTubes(2, 15.0)
+template:setWeaponStorage("HVLI", 8)
+template:setTubeDirection(0, -90):setWeaponTubeExclusiveFor(0, "HVLI")
+template:setTubeDirection(1, 90):setWeaponTubeExclusiveFor(0, "HVLI")
+template:setBeam(0, 10, 0, 700, 6.0, 10)
 
 
 -- Template for pirate raider Starfighters
@@ -123,3 +134,11 @@ template:setWeaponStorage("HVLI", 3)
 template:setTubeSize(0, "small")
 template:setTubeDirection(0, 0):setWeaponTubeExclusiveFor(0, "HVLI")
 template:setBeam(0, 10, 0, 700, 6.0, 2)
+
+
+-- Template for derelict ships
+template = ShipTemplate():setName("Derelict Gloriana"):setClass("Dreadnaught", "Odin"):setModel("LindwurmFighterYellow")
+template:setRadarTrace("radartrace_derelict.png")
+template:setDescription([[The machine spirits of this Gloriana-class battlecruiser are quiet, and have been for millenia.]])
+template:setHull(200)
+template:setSpeed(0, 0, 0)

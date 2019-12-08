@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'blackletter';
+  src: url('fonts/Deutsch-webfont.woff') format('woff');
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'blackletter';
+}
+
+h1 {
+  text-align: center;
+  font-size: 500%;
+}
+
+button {
+  color: red;
+  font-family: 'blackletter';
+  font-size: 200%;
+  padding: 15px;
+  border-radius: 5px;
+  border-color: red;
+  background-color: black;
+}
+
+#launch_button_container {
+  text-align: center;
+}
