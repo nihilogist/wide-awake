@@ -7,7 +7,8 @@
 [INFO]  OpenGL version: 4.6
 [INFO]  Load script: model_data.lua
 [INFO]  Load script: shipTemplates.lua
-[ERROR] Duplicate ship template definition: Luna
+[ERROR] Duplicate ship template definition: Lunar
+[ERROR] Duplicate ship template definition: Scapula
 [INFO]  Load script: factionInfo.lua
 [INFO]  Load script: science_db.lua
 [INFO]  Model data: AdlerLongRangeScoutGreen is not used by any ship template
@@ -89,52 +90,23 @@
 [INFO]  Loaded: gui/PanelBackground with 0 sprites
 [INFO]  Load script: scenario_63_theWake.lua
 [INFO]  Load script: util_random_transports.lua
-[WARN]  Failed to open game state log file: logs/game_log_07-12-2019_15.45.41.txt
+[WARN]  Failed to open game state log file: logs/game_log_08-12-2019_00.15.58.txt
 [INFO]  Loaded: gui/icons/station-helm with 0 sprites
 [INFO]  Loaded: gui/icons/station-weapons with 0 sprites
 [INFO]  Loaded: gui/icons/station-engineering with 0 sprites
 [INFO]  Loaded: gui/icons/station-science with 0 sprites
 [INFO]  Loaded: gui/icons/station-relay with 0 sprites
 [INFO]  Loaded: gui/ButtonBackground.disabled with 0 sprites
-[INFO]  Loaded: gui/BackgroundGradientOffset with 0 sprites
-[INFO]  Loaded: RadarBlip.png with 0 sprites
-[INFO]  Loaded: radartrace_mediumstation.png with 0 sprites
-[INFO]  Loaded: radartrace_largestation.png with 0 sprites
-[INFO]  Loaded: Nebula1.png with 0 sprites
-[INFO]  Loaded: Nebula2.png with 0 sprites
-[INFO]  Loaded: Nebula3.png with 0 sprites
-[INFO]  Loaded: radar_dread.png with 0 sprites
-[INFO]  Loaded: redicule.png with 0 sprites
-[INFO]  Loaded: gui/KeyValueBackground with 0 sprites
 [INFO]  Loaded: gui/SliderBackground with 0 sprites
 [INFO]  Loaded: gui/SliderKnob with 0 sprites
-[INFO]  Loaded: RadarArrow.png with 0 sprites
-[INFO]  Loading shader: billboardShader
-[INFO]  Loaded: StarsBack with 0 sprites
-[INFO]  Loaded: StarsLeft with 0 sprites
-[INFO]  Loaded: StarsFront with 0 sprites
-[INFO]  Loaded: StarsRight with 0 sprites
-[INFO]  Loaded: StarsTop with 0 sprites
-[INFO]  Loaded: StarsBottom with 0 sprites
-[INFO]  Loaded: Nebula1 with 0 sprites
-[INFO]  Loaded: Nebula3 with 0 sprites
-[INFO]  Loaded: Nebula2 with 0 sprites
-[INFO]  Loading shader: objectShaderBS
-[INFO]  Loaded: Astroid_5_d.png with 0 sprites
-[INFO]  Loaded: Astroid_5_s.png with 0 sprites
-[INFO]  Loaded: Astroid_8_d.png with 0 sprites
-[INFO]  Loaded: Astroid_8_s.png with 0 sprites
-[INFO]  Loaded: Astroid_10_d.png with 0 sprites
-[INFO]  Loaded: Astroid_10_s.png with 0 sprites
-[INFO]  Loaded: Astroid_7_d.png with 0 sprites
-[INFO]  Loaded: Astroid_7_s.png with 0 sprites
-[INFO]  Loaded: Astroid_2_d.png with 0 sprites
-[INFO]  Loaded: Astroid_2_s.png with 0 sprites
-[INFO]  Loaded: Astroid_1_d.png with 0 sprites
-[INFO]  Loaded: Astroid_1_s.png with 0 sprites
-[INFO]  Loaded: Astroid_3_d.png with 0 sprites
-[INFO]  Loaded: Astroid_3_s.png with 0 sprites
-[INFO]  Loaded: Astroid_4_d.png with 0 sprites
-[INFO]  Loaded: Astroid_4_s.png with 0 sprites
-[INFO]  Loaded: space_station_4/space_station_4_color.jpg with 0 sprites
-[INFO]  Loaded: space_station_4/space_station_4_specula
+[INFO]  Loaded: RadarBlip.png with 0 sprites
+[INFO]  Loaded: Nebula2.png with 0 sprites
+[INFO]  Loaded: radartrace_smallstation.png with 0 sprites
+[INFO]  Loaded: radartrace_largestation.png with 0 sprites
+[INFO]  Loaded: radartrace_mediumstation.png with 0 sprites
+[INFO]  Loaded: radar_dread.png with 0 sprites
+[INFO]  Loaded: Nebula3.png with 0 sprites
+[INFO]  Loaded: redicule.png with 0 sprites
+[INFO]  Loaded: radar_transport.png with 0 sprites
+[INFO]  Loaded: shield_circle.png with 0 sprites
+[INFO]  Loaded: radar_fighter.png with 0 sprites

@@ -7,12 +7,15 @@
 require("utils.lua")
 
 function init()
-	-- Spawn a player Atlantis.
-	player = PlayerSpaceship():setFaction("Human Navy"):setTemplate("Luna")
+	-- Spawn a player Lunar Cruiser.
+	ghostOne = PlayerSpaceship():setFaction("Human Navy"):setTemplate("Lunar"):setCallSign("GhostOne")
 
 	enemyList = {}
 	friendlyList = {}
 	stationList = {}
+	scapulaOne = nil
+	scapulaTwo = nil
+	scapulaThree = nil
 
 	-- Randomly distribute 3 allied stations throughout the region.
 	n = 0
@@ -39,51 +42,55 @@ function init()
 		setCirclePos(Nebula(), 0, 0, random(0, 360), random(20000, 45000))
 	end
 
-	-- GM functions to manually trigger enemy waves.
-	addGMFunction("Strikeship wave", function()
-		addWave(enemyList,0,setWaveAngle(math.random(20), math.random(20)),setWaveDistance(math.random(5)))
+  -- GM function to launch a Fighter
+  function launchFighter(callsign)
+		launchedFighter = PlayerSpaceship():setFaction("Human Navy"):setTemplate("Scapula"):setCallSign(callsign)
+		local x, y = ghostOne:getPosition()
+		local direction = ghostOne:getHeading()
+		setCirclePos(launchedFighter, x, y, direction - 270, 400)
+		launchedFighter:setHeading(direction - 180)
+		launchedFighter:commandTargetRotation(direction - 270)
+		launchedFighter:commandImpulse(0.5)
+		return launchedFighter
+	end
+
+	addGMFunction("Launch SC1", function()
+		if scapulaOne == nil then
+  		scapulaOne = launchFighter("Scapula One")
+	  end
 	end)
 
-	addGMFunction("Fighter wave", function()
-		addWave(enemyList,1,setWaveAngle(math.random(20), math.random(20)),setWaveDistance(math.random(5)))
+	addGMFunction("Recover SC1", function()
+		if scapulaOne ~= nil then
+  		scapulaOne:destroy()
+			scapulaOne = nil
+	  end
 	end)
 
-	addGMFunction("Gunship wave", function()
-		addWave(enemyList,2,setWaveAngle(math.random(20), math.random(20)),setWaveDistance(math.random(5)))
+	addGMFunction("Launch SC2", function()
+		if scapulaTwo == nil then
+  		scapulaTwo = launchFighter("Scapula Two")
+	  end
 	end)
 
-	addGMFunction("Dreadnought", function()
-		addWave(enemyList,4,setWaveAngle(math.random(20), math.random(20)),setWaveDistance(math.random(5)))
+	addGMFunction("Recover SC2", function()
+		if scapulaTwo ~= nil then
+  		scapulaTwo:destroy()
+			scapulaTwo = nil
+	  end
 	end)
 
-	addGMFunction("Missile cruiser wave", function()
-		addWave(enemyList,5,setWaveAngle(math.random(20), math.random(20)),setWaveDistance(math.random(5)))
+	addGMFunction("Launch SC3", function()
+		if scapulaThree == nil then
+  		scapulaThree = launchFighter("Scapula Three")
+	  end
 	end)
 
-	addGMFunction("Cruiser wave", function()
-		addWave(enemyList,6,setWaveAngle(math.random(20), math.random(20)),setWaveDistance(math.random(5)))
-	end)
-
-	addGMFunction("Adv. striker wave", function()
-		addWave(enemyList,9,setWaveAngle(math.random(20), math.random(20)),setWaveDistance(math.random(5)))
-	end)
-
-	-- Let the GM spawn a random enemy wave.
-	addGMFunction("Random wave", function()
-		a = setWaveAngle(math.random(20), math.random(20))
-		d = setWaveDistance(math.random(20))
-		type = random(0, 10)
-		addWave(enemyList,type,a,d)
-	end)
-
-	-- Let the GM spawn random reinforcements. Their distance from the
-	-- players' spawn point is about half that of enemy waves.
-	addGMFunction("Random friendly", function()
-		a = setWaveAngle(math.random(20), math.random(20))
-		d = random(15000, 20000 + math.random(20) * 1500)
-		friendlyShip = {'Phobos T3','MU52 Hornet','Piranha F12'}
-		friendlyShipIndex = math.random(#friendlyShip)
-		table.insert(friendlyList, setCirclePos(CpuShip():setTemplate(friendlyShip[friendlyShipIndex]):setRotation(a):setFaction("Human Navy"):orderRoaming():setScanned(true), 0, 0, a + random(-5, 5), d + random(-100, 100)))
+	addGMFunction("Recover SC3", function()
+		if scapulaThree ~= nil then
+  		scapulaThree:destroy()
+			scapulaThree = nil
+	  end
 	end)
 
 	-- Let the GM declare the Humans (players) victorious.

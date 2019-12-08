@@ -246,3 +246,144 @@ fwpuclnt.dll	6.2.18362.113
 Windows 6.2.9200
 DrMingw 0.8.2
 
+-------------------
+
+Error occurred on Saturday, December 7, 2019 at 22:21:17.
+
+EmptyEpsilon.exe caused an Access Violation at location 0058C5FD in module EmptyEpsilon.exe Reading from location 000005B8.
+
+Registers:
+eax=00000000 ebx=0146d910 ecx=0e77bc68 edx=00000000 esi=00001c93 edi=0146fae0
+eip=0058c5fd esp=0146d890 ebp=0146d928 iopl=0         nv up ei pl nz na po nc
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010206
+
+AddrPC   Params
+0058C5FD 0146D9B4 0146D98C 0146D990  EmptyEpsilon.exe!ShipTemplateBasedObject::setTemplate
+006B095B 0363DA6C 0E67D7C0 00000000  EmptyEpsilon.exe!call<ShipTemplateBasedObject, void (ShipTemplateBasedObject::*)(string)>::function
+00648A48 0363DA6C 0E67D780 00000001  EmptyEpsilon.exe!luaD_precall
+0065B37F 0363DA6C 0E67D770 00000000  EmptyEpsilon.exe!luaV_execute
+00648E3C 0363DA6C 0E67D770 00000000  EmptyEpsilon.exe!luaD_call
+0064DE34 0363DA6C 0146DF68 00000004  EmptyEpsilon.exe!f_call
+0064829F 0363DA6C 0064DE02 0146DF68  EmptyEpsilon.exe!luaD_rawrunprotected
+0064949D 0363DA6C 0064DE02 0146DF68  EmptyEpsilon.exe!luaD_pcall
+0064DED6 0363DA6C 00000000 00000000  EmptyEpsilon.exe!lua_pcallk
+005DD180 0146E234 778CADEE 00000000  EmptyEpsilon.exe!ScriptObject::run
+0041AE82 0146E478 0146E448 00000000  EmptyEpsilon.exe!GameGlobalInfo::startScenario
+004512C1 0146E4C8 0E68AE7C 00000002  EmptyEpsilon.exe!ServerCreationScreen::startScenario
+00444079 0146E578 42480000 0146E500  EmptyEpsilon.exe!ServerCreationScreen::ServerCreationScreen()::{lambda()#16}::operator()
+0045375E 0146E578 0E68AE7C 0146E518  EmptyEpsilon.exe!std::_Function_handler<void (), ServerCreationScreen::ServerCreationScreen()::{lambda()#16}>::_M_invoke
+006E2056 0E68AE7C 3F800000 42C80000  EmptyEpsilon.exe!std::function<void ()>::operator()
+00540516 44989400 444DC800 44C80000  EmptyEpsilon.exe!GuiButton::onMouseUp
+00539DFD 03613C08 76989392 0146E6A0  EmptyEpsilon.exe!GuiCanvas::render
+005BF4A8 03613C08 00000007 00000000  EmptyEpsilon.exe!RenderLayer::render
+005BF449 03613C08 00000000 00000000  EmptyEpsilon.exe!RenderLayer::render
+005BF449 03613C08 BB04CE29 00000002  EmptyEpsilon.exe!RenderLayer::render
+005BF449 03613C08 00007D30 0000007B  EmptyEpsilon.exe!RenderLayer::render
+005B1994 03613C08 0146EC14 0146FFCC  EmptyEpsilon.exe!PostProcessor::render
+005B1994 03613C08 00000014 00000014  EmptyEpsilon.exe!PostProcessor::render
+0060E0DA 00000000 0079B83C 0079AFB8  EmptyEpsilon.exe!WindowManager::render
+0060DA8D 0146FBE0 0146F0F4 00000103  EmptyEpsilon.exe!Engine::runMainLoop
+004040CB 01DCCA50 00000058 00000001  EmptyEpsilon.exe!main
+004013E3 0025E000 761E6340 0146FFDC  EmptyEpsilon.exe!__tmainCRTStartup  [./mingw-w64-crt/crt/crtexe.c @ 334]
+761E6359 0025E000 BB04D649 00000000  KERNEL32.DLL!@BaseThreadInitThunk@12
+778F7B74 FFFFFFFF 77918EFD 00000000  ntdll.dll!__RtlUserThreadStart
+778F7B44 004014E0 0025E000 00000000  ntdll.dll!__RtlUserThreadStart@8
+
+EmptyEpsilon.exe
+ntdll.dll   	6.2.18362.387
+KERNEL32.DLL	6.2.18362.329
+KERNELBASE.dll	6.2.18362.476
+ADVAPI32.dll	6.2.18362.329
+msvcrt.dll  	7.0.18362.1
+sechost.dll 	6.2.18362.267
+RPCRT4.dll  	6.2.18362.476
+SspiCli.dll 	6.2.18362.1
+CRYPTBASE.dll	6.2.18362.1
+bcryptPrimitives.dll	6.2.18362.295
+USER32.dll  	6.2.18362.476
+win32u.dll  	6.2.18362.476
+GDI32.dll   	6.2.18362.1
+gdi32full.dll	6.2.18362.476
+msvcp_win.dll	6.2.18362.387
+ucrtbase.dll	6.2.18362.387
+sfml-audio-2.dll
+sfml-graphics-2.dll
+sfml-network-2.dll
+WS2_32.dll  	6.2.18362.387
+IPHLPAPI.DLL	6.2.18362.1
+OPENGL32.DLL	6.2.18362.387
+combase.dll 	6.2.18362.449
+WSOCK32.DLL 	6.2.18362.1
+libgcc_s_sjlj-1.dll
+libstdc++-6.dll
+sfml-system-2.dll
+exchndl.dll 	0.8.2.0
+PSAPI.DLL   	6.2.18362.1
+SHELL32.dll 	6.2.18362.449
+cfgmgr32.dll	6.2.18362.387
+shcore.dll  	6.2.18362.1
+windows.storage.dll	6.2.18362.449
+profapi.dll 	6.2.18362.1
+powrprof.dll	6.2.18362.1
+UMPDC.dll
+shlwapi.dll 	6.2.18362.1
+kernel.appcore.dll	6.2.18362.1
+cryptsp.dll 	6.2.18362.1
+GLU32.dll   	6.2.18362.387
+WINMM.DLL   	6.2.18362.1
+sfml-window-2.dll
+VERSION.dll 	6.2.18362.1
+WINMMBASE.dll	6.2.18362.1
+dxcore.dll  	6.2.18362.1
+OpenAL32.dll
+ole32.dll   	6.2.18362.113
+mgwhelp.dll 	0.8.2.0
+dbghelp.dll 	6.3.9600.17336
+IMM32.DLL   	6.2.18362.387
+clbcatq.dll 	2001.12.10941.16384
+MMDevApi.dll	6.2.18362.387
+DEVOBJ.dll  	6.2.18362.387
+AUDIOSES.DLL	6.2.18362.449
+OLEAUT32.dll	6.2.18362.329
+wintypes.dll	6.2.18362.449
+resourcepolicyclient.dll	6.2.18362.1
+uxtheme.dll 	6.2.18362.449
+MSCTF.dll   	6.2.18362.387
+nost_FSH.dll	3.1.0.818
+nvoglv32.dll	26.21.14.4141
+SETUPAPI.dll	6.2.18362.1
+bcrypt.dll  	6.2.18362.267
+WTSAPI32.dll	6.2.18362.1
+WINTRUST.dll	6.2.18362.387
+MSASN1.dll  	6.2.18362.1
+CRYPT32.dll 	6.2.18362.476
+ntmarta.dll 	6.2.18362.1
+dwmapi.dll  	6.2.18362.267
+nvspcap.dll 	3.20.1.57
+WINSTA.dll  	6.2.18362.53
+dinput8.dll 	6.2.18362.1
+inputhost.dll	6.2.18362.387
+CoreUIComponents.dll	6.2.18362.207
+CoreMessaging.dll	6.2.18362.1
+PROPSYS.dll 	7.0.18362.267
+HID.DLL     	6.2.18362.1
+TextInputFramework.dll	6.2.18362.207
+iertutil.dll	11.0.18362.449
+SpTip.dll   	6.2.18362.1
+OWExplorer.dll	2.2.74.2
+mswsock.dll 	6.2.18362.1
+NSI.dll     	6.2.18362.449
+dhcpcsvc6.DLL	6.2.18362.267
+dhcpcsvc.DLL	6.2.18362.267
+DNSAPI.dll  	6.2.18362.267
+WININET.dll 	11.0.18362.418
+ondemandconnroutehelper.dll	6.2.18362.1
+winhttp.dll 	6.2.18362.449
+WINNSI.DLL  	6.2.18362.449
+urlmon.dll  	11.0.18362.449
+rasadhlp.dll	6.2.18362.1
+fwpuclnt.dll	6.2.18362.113
+
+Windows 6.2.9200
+DrMingw 0.8.2
+

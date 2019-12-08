@@ -1,6 +1,6 @@
---
+-- First up the template for the player ship
 
-template = ShipTemplate():setName("Luna"):setClass("Corvette", "Destroyer"):setModel("battleship_destroyer_1_upgraded")
+template = ShipTemplate():setName("Lunar"):setClass("Corvette", "Destroyer"):setModel("battleship_destroyer_1_upgraded")
 template:setDescription([[The Luna class cruiser.]])
 template:setRadarTrace("radar_dread.png")
 template:setHull(100)
@@ -26,15 +26,18 @@ template:weaponTubeDisallowMissle(2,"Homing")
 template:weaponTubeDisallowMissle(3,"Homing")
 template:weaponTubeDisallowMissle(4,"Homing")
 template:weaponTubeDisallowMissle(5,"Homing")
+template:weaponTubeDisallowMissle(6,"Homing")
+template:weaponTubeDisallowMissle(7,"Homing")
 
 
 
-variation = template:copy("Luna"):setType("playership")
+variation = template:copy("Lunar"):setType("playership")
 variation:setDescription([[The Luna class cruiser]])
-variation:setHull(250)
+variation:setHull(500)
 variation:addRoomSystem(1, 0, 2, 1, "Maneuver");
 variation:addRoomSystem(1, 1, 2, 1, "BeamWeapons");
 variation:addRoom(2, 2, 2, 1);
+variation:setDockClasses("Starfighter");
 
 variation:addRoomSystem(0, 3, 1, 2, "RearShield");
 variation:addRoomSystem(1, 3, 2, 2, "Reactor");
@@ -61,3 +64,62 @@ variation:addDoor(6, 3, false);
 variation:addDoor(6, 4, false);
 variation:addDoor(8, 3, false);
 variation:addDoor(8, 4, false);
+
+
+-- Next up the template for the player Starfighters
+template = ShipTemplate():setName("Scapula"):setClass("Starfighter", "Interceptor"):setModel("LindwurmFighterYellow")
+template:setRadarTrace("radar_fighter.png")
+template:setDescription([[Scapula-class deep space superiority fighter.]])
+template:setHull(50)
+template:setShields(20)
+template:setSpeed(50, 30, 25)
+template:setTubes(1, 15.0)
+template:setWeaponStorage("Homing", 2)
+template:setTubeSize(0, "small")
+template:setTubeDirection(1, 0):setWeaponTubeExclusiveFor(1, "Homing")
+
+variation = template:copy("Scapula"):setModel("LindwurmFighterBlue"):setType("playership")
+--               Num, Arc, Dir, Range, CycleTime, Dmg
+variation:setBeam(0, 10, 0, 700, 6.0, 2)
+template:setSpeed(60, 30, 25)
+variation:setCombatManeuver(250, 150)
+variation:setEnergyStorage(400)
+
+variation:setRepairCrewCount(1)
+variation:addRoomSystem(0,0,1,3,"RearShield")
+variation:addRoomSystem(1,1,3,1,"MissileSystem")
+variation:addRoomSystem(4,1,2,1,"Beamweapons")
+variation:addRoomSystem(3,2,2,1,"Reactor")
+variation:addRoomSystem(2,3,2,1,"Warp")
+variation:addRoomSystem(4,3,5,1,"JumpDrive")
+variation:addRoomSystem(0,4,1,3,"Impulse")
+variation:addRoomSystem(3,4,2,1,"Maneuver")
+variation:addRoomSystem(1,5,3,1,"FrontShield")
+variation:addRoom(4,5,2,1)
+
+variation:addDoor(1,1,false)
+variation:addDoor(1,5,false)
+variation:addDoor(3,2,true)
+variation:addDoor(4,2,true)
+variation:addDoor(3,3,true)
+variation:addDoor(4,3,true)
+variation:addDoor(3,4,true)
+variation:addDoor(4,4,true)
+variation:addDoor(3,5,true)
+variation:addDoor(4,5,true)
+
+
+
+
+-- Template for pirate raider Starfighters
+template = ShipTemplate():setName("Hackblade"):setClass("Starfighter", "Interceptor"):setModel("LindwurmFighterYellow")
+template:setRadarTrace("radar_fighter.png")
+template:setDescription([[A bastardised Scapula, illegally modified over many years.]])
+template:setHull(20)
+template:setShields(5, 5)
+template:setSpeed(30, 10, 10)
+template:setTubes(1, 15.0)
+template:setWeaponStorage("HVLI", 3)
+template:setTubeSize(0, "small")
+template:setTubeDirection(0, 0):setWeaponTubeExclusiveFor(0, "HVLI")
+template:setBeam(0, 10, 0, 700, 6.0, 2)
